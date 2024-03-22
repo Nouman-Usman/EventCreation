@@ -272,34 +272,7 @@
               Register as a Mentor
             </a>
           </div>
-          <script>
-            function loadDevfolioScript() {
-              const script = document.createElement('script');
-              script.src = 'https://apply.devfolio.co/v2/sdk.js';
-              script.async = true;
-              script.defer = true;
-
-              // Append the script to the body
-              document.body.appendChild(script);
-
-              // Return a function to remove the script when needed
-              return function removeScript() {
-                document.body.removeChild(script);
-              }
-            }
-
-            // Load the script when the DOM is loaded
-            document.addEventListener('DOMContentLoaded', () => {
-              const removeScript = loadDevfolioScript();
-
-              // Clean up the script when the page is unloaded (optional)
-              window.addEventListener('beforeunload', () => {
-                removeScript();
-              });
-            });
-          </script>
-          <div class="apply-button" data-hackathon-slug="Apply With DevFolio" data-button-theme="light"
-            style="height: 44px; width: 312px;"></div>
+          
         </div>
         <!-- //.col-md-6 -->
       </div>

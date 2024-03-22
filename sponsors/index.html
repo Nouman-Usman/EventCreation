@@ -429,6 +429,34 @@
             </div>
             <!-- //.overflow-hidden -->
           </div>
+          <script>
+            function loadDevfolioScript() {
+              const script = document.createElement('script');
+              script.src = 'https://apply.devfolio.co/v2/sdk.js';
+              script.async = true;
+              script.defer = true;
+
+              // Append the script to the body
+              document.body.appendChild(script);
+
+              // Return a function to remove the script when needed
+              return function removeScript() {
+                document.body.removeChild(script);
+              }
+            }
+
+            // Load the script when the DOM is loaded
+            document.addEventListener('DOMContentLoaded', () => {
+              const removeScript = loadDevfolioScript();
+
+              // Clean up the script when the page is unloaded (optional)
+              window.addEventListener('beforeunload', () => {
+                removeScript();
+              });
+            });
+          </script>
+          <div class="apply-button" data-hackathon-slug="Apply With DevFolio" data-button-theme="light"
+            style="height: 44px; width: 312px;"></div>
           <!-- <div class="row padding-8 no-padding-rl no-padding-bottom">
         <div class="col-md-8 col-md-offset-2 text-center">
           <h3 class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
