@@ -520,11 +520,8 @@
   }
 }
 .map iframe {
-  align-items: center;
-  justify-content: center;
-  display: inline;
   position: absolute;
-  border: 10px;
+  border: 0;
   top: 0;
   left: 0;
   width: 100% !important;
@@ -726,7 +723,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 20vw;
   height: 100%;
   margin: auto;
   transition: all ease-in-out 2s;

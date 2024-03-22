@@ -2,11 +2,13 @@
 om/css?family=Roboto:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Catamaran:400,700,900);
 
+
 body,
 html,
 ul {
   margin: 0;
-  padding: 0
+  padding: 0;
+
 }
 ol {
   padding-left: 0
